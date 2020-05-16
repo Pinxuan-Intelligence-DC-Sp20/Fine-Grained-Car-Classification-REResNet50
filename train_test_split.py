@@ -1,8 +1,9 @@
 import cv2, os, random, numpy, pandas
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-
+# Change the path accordingly
 path = 'D:/SAAS/DC/project/fine-grained vehicle classification/data/data/image/'
+
+
 classes = []
 data = pandas.DataFrame(columns=["path_to_image", "class", "class_index"])
 for make in os.listdir(path):
