@@ -11,10 +11,11 @@ from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint,ReduceLROnPlateau,EarlyStopping,TensorBoard
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-preprocess_input = lambda x: imagenet_utils.preprocess_input(x, mode='torch')
+preprocess_input = lambda x: imagenet_utils.preprocess_input(x, mode='torch') #Comment if training new model
 make_names = loadmat('make_model_name.mat')['make_names']
 model_names = loadmat('make_model_name.mat')['model_names']
 
+#Uncomment if training new model
 #SEResNet50, preprocess_input = Classifiers.get('seresnet50')
 
 num_classes = 4454
@@ -114,8 +115,13 @@ def gen_test(batch_size=6):
         y = to_categorical(y, num_classes)
         yield x, y
 
+#Continue training
 model = load_model('trial5.h5')
+
+#Training new model
 #model = SEResNet50(input_shape=(None,None,3), include_top=True,classes=num_classes)
+
+
 adam = Adam(lr=0.0005)
 model.compile(optimizer=adam, loss='categorical_crossentropy', metrics=['accuracy'])
 
@@ -123,7 +129,7 @@ batch_size = 8
 train_loader = gen_train(batch_size=batch_size)
 test_loader = gen_test(batch_size=batch_size)
 
-checkpoint = ModelCheckpoint(filepath='./models/weights-senet-{epoch:02d}-{val_loss:.2f}.h5',
+checkpoint = ModelCheckpoint(filepath='./weights-senet-{epoch:02d}-{val_loss:.2f}.h5',
                              monitor='val_loss', save_best_only=True)
 
 reduce_lr = ReduceLROnPlateau(monitor='val_loss', patience=4, mode='auto')
