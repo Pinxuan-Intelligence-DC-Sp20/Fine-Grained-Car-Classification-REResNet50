@@ -94,6 +94,12 @@ We decided to try that on the whole dataset using the client’s server which ha
 
 Currently we are still training our model, the current training and validation accuracy is 50% and 48% after 70 epochs. The improvement rate is about 4% every 10 epochs and slowly decreasing. We are not sure if the validation accuracy will ever reach over 95%, but we believe it is worth it to continue training and wait until improvement stops. 
 
+### Future work
+For further improvement, try reducing the reduction ratio a little bit because there is a slightly better performance on the small dataset. It might have a larger effect on the entire dataset.
+
+### Reflection
+We learned about how SENet and ResNet work and how hyperparameters can greatly affect the model performance. Another important lesson is that we should log our results regularly so that we have a more precise record of how well each version of our model did. 
+
 
 ## Authors
 
