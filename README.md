@@ -92,9 +92,6 @@ To this point, you should be able to interpret the data in [outputs/](outputs/) 
 
 ## Authors
 
-* **Jinting Li** - [StefStroke](https://github.com/StefStroke)
+* **Liyang Xie** - [LY-Xie](https://github.com/LY-Xie)
 
-* **Boyuan Ma** - [jerrymby](https://github.com/jerrymby)
-
-See also the list of [contributors](https://cs170.org/staff/) - CS170 UC Berkeley Course Stuff and instrcutors
-
+* **Stefan Li** - [StefStroke](https://github.com/StefStroke)
