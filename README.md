@@ -50,7 +50,7 @@ seaborn
 
 ## Running the Code
 
-The "meat" of our model is in [SEResnet1.py](SEResnet1.py) file and [SEResnet2.py](SEResnet2.py). These two files are two slightly different implementation of the SEResnet, in particular with different hyperparameters and data agumentation schemes
+The "meat" of our model is in [SEResnet1.py](SEResnet1.py) file and [SEResNet2.py](SEResNet2.py). These two files are two slightly different implementation of the SEResnet, in particular with different hyperparameters and data agumentation schemes
 
 ### SEResnet1.py
 ### SEResnet1.py
