@@ -62,10 +62,10 @@ seaborn
 
 The "meat" of our model is in [SEResnet1.py](SEResnet1.py) file and [SEResNet2.py](SEResNet2.py). These two files are two slightly different implementation of the SEResnet, in particular with different hyperparameters and data agumentation schemes
 
-## Train test split.py
+### Train test split.py
 [train_test_split.py](train_test_split.py) on the top level of the repo is specifically used for [SEResnet1.py](SEResnet1.py). **You must run [train_test_split.py](train_test_split.py) before running [SEResnet1.py](SEResnet1.py),** generating two .csv files as a result. The Above mentioned step is not necessary for [SEResNet2.py](SEResNet2.py), which has its train_test_split process embedded in the .py file.
 
-## SEResNet2.py
+### SEResNet2.py
 There are various hyperparameters well documented in [SEResNet2.py](SEResNet2.py). In comments starting with 
 ```
 #TODO:
