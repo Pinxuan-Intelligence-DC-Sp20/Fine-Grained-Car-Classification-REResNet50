@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 pip install git+https://github.com/qubvel/classification_models.git
 ```
 
-This should install the Series of Keras Models we use in out training
+This should install the pachage of Keras Models we use in our training
 
 Also we choose to not include CompCars Dataset in the repo since it is a large file, thus you must download the Dataset following instructions from [here](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/instruction.txt), **place it on the top level of the repo and name the directory as "CompCars_Dataset".** Make sure you see two directories data/, sv_data/ and a README.txt by the end of this step
 
@@ -28,6 +28,7 @@ Packages and libraries you need to install
 pip/pip3
 Python 3.7.0 or higher
 
+csv
 scipy.io
 numpy
 pandas
