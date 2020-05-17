@@ -1,9 +1,11 @@
 # Fine-Grained-Car-Classification-REResNet50
 CNN model based on Keras REResNet50 to classify car makes, models, and year of production
 
-# Problem Statement
-**Task:**  come up with a model that, given a random image of a car, can predict the car’s make, model, and year with 95% accuracy. 
-**Dataset:** We utilize the CompCars Dataset by Cornell University, a dataset of over 160,000 HD images and surveillance images with labels to train on. The HD images are mostly from the web, whereas the surveillance images are taken by actual surveillance cameras. As for the labels, there are over 160 makes. Within each make, there are 1-15 models. And within each model, there are about 10 release years, accounting up to more than 11000 classes
+## Problem Statement
+### Task:  
+come up with a model that, given a random image of a car, can predict the car’s make, model, and year with 95% accuracy. 
+### Dataset: 
+We utilize the CompCars Dataset by Cornell University, a dataset of over 160,000 HD images and surveillance images with labels to train on. The HD images are mostly from the web, whereas the surveillance images are taken by actual surveillance cameras. As for the labels, there are over 160 makes. Within each make, there are 1-15 models. And within each model, there are about 10 release years, accounting up to more than 11000 classes
 Significance: 
 
 ## Getting Started
