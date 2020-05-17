@@ -12,7 +12,7 @@ pip install git+https://github.com/qubvel/classification_models.git
 
 This should install the pachage of Keras Models we use in our training
 
-Also we choose to not include CompCars Dataset in the repo since it is a large file, thus you must download the Dataset following instructions from [here](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/instruction.txt), **place it on the top level of the repo and name the directory as "CompCars_Dataset".** Make sure you see two directories data/, sv_data/ and a README.txt by the end of this step
+Also we choose to not include CompCars Dataset in the repo since it is a large file. Thus you must download the Dataset following instructions from [here](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/instruction.txt), then **place it on the top level of the repo and name the directory as "CompCars_Dataset".** Make sure you see two directories data/, sv_data/ and a README.txt by the end of this step
 
 ## Prerequisites
 
@@ -53,8 +53,15 @@ seaborn
 
 The "meat" of our model is in [SEResnet1.py](SEResnet1.py) file and [SEResNet2.py](SEResNet2.py). These two files are two slightly different implementation of the SEResnet, in particular with different hyperparameters and data agumentation schemes
 
-### SEResnet1.py
-### SEResnet1.py
+## Train test split.py
+[train_test_split.py](train_test_split.py) on the top level of the repo is specifically used for [SEResnet1.py](SEResnet1.py). **You must run [train_test_split.py](train_test_split.py) before running [SEResnet1.py](SEResnet1.py),** generating two .csv files as a result. The Above mentioned step is not necessary for [SEResNet2.py](SEResNet2.py), which has its train_test_split process embedded in the .py file.
+
+## SEResNet2.py
+There are various hyperparameters well documented in [SEResNet2.py](SEResNet2.py). In comments starting with 
+```
+#TODO:
+```
+you will see the meaning of these hyperparameters and the interval, between which you can tune them. Feel free to use our model for your own purposes
 
 To this point, you should be able to interpret the data in [outputs/](outputs/) freely
 
