@@ -1,7 +1,7 @@
 import cv2, os, random, numpy, pandas
 
 # Change the path accordingly
-path = 'D:/SAAS/DC/project/fine-grained vehicle classification/data/data/image/'
+path = './CompCars_Dataset/data/data/image/'
 
 
 classes = []
